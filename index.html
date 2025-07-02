@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora HP 12C</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="container_top">
+        <h1>Calculadora HP 12C</h1>
+        <div class="containerDisplay">
+        <input type="text" id="display" disabled>
+
+        </div>
+
+    </div>
+    <div class="containerTeclado">
+        <div class="teclado">
+            <button class="numeral" onclick="exibirNumeros(7)," >7</button>
+            <button class="numeral" onclick="exibirNumeros(8)">8</button>
+            <button class="numeral" onclick="exibirNumeros(9)">9</button>
+            <button class="numeral" onclick="exibirOperacoes('/')">/</button>
+            <br>
+        </div>
+        <div class="teclado>">
+            <button class="numeral" onclick="exibirNumeros(4)">4</button>
+            <button class="numeral" onclick="exibirNumeros(5)">5</button>
+            <button class="numeral" onclick="exibirNumeros(6)">6</button>
+            <button class="numeral" onclick="exibirOperacoes(`*`)">x</button>
+            <br>
+        </div>
+        <div class="teclado">
+            <button class="numeral" onclick="exibirNumeros(1)">1</button>
+            <button class="numeral" onclick="exibirNumeros(2)">2</button>
+            <button class="numeral" onclick="exibirNumeros(3)">3</button>
+            <button class="numeral" onclick="exibirOperacoes(`-`)">-</button>
+            <br>
+        </div>
+        <div class="teclado">
+            <button class="numeral" onclick="exibirNumeros(0)">0</button>
+            <button class="numeral" onclick="limparCalculadora()">C</button>
+            <button class="numeral" onclick="calculadora()">=</button>
+            <button class="numeral" onclick="exibirOperacoes(`+`)">+</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
